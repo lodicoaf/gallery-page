@@ -9,21 +9,50 @@
     <title> Image Gallery </title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:400,700" rel="stylesheet">
-    <!-- Style Sheets -->
-    <!-- box slider style sheet goes here -->
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <!-- Boxslider Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="jquery.bxslider.css" />
+    <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Loads jQuery library via CDN -->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		<!-- Calls Boxslider Javascript file -->
+		<script src="bxslider.min.js"></script>
+		<!-- Calls Boxslider Function -->
+		<script src="slider.js"></script>
   </head>
   <body>
     <main>
+      <nav id="main-navigation" class="navigation">
+        <a href="#"><span class="x-mark">&#10006;</span></a>
+        <h3> Navigation </h3>
+        <ul class="">
+            <li><a href="#"> Gallery One </a></li>
+            <li><a href="#"> Gallery Two </a></li>
+            <li><a href="#"> Gallery Three </a></li>
+        </ul>
+      </nav>
+      <header class="icon-wrap">
+        <a href="#main-navigation"><span class="hamburger">&#9776; </span></a>
+      </header>
       <section class="heading">
         <!-- Box Slider -->
-        <div class="slider-container">
-          <!-- this is the box slider -->
+        <div class="slide-container">
+          <ul class="bxslider">
+            <li><img src="pix/place.png" title="title for slide one" alt="place" /></li>
+            <li><img src="pix/place.png" title="title for slide two" alt="place" /></li>
+            <li><img src="pix/place.png" title="title for slide three" alt="place" /></li>
+            <li><img src="pix/place.png" title="title for slide four" alt="place" /></li>
+          </ul>
         </div>
         <!-- Title and info for Page -->
         <div class="title">
           <h1> Title for page </h1>
           <p> some info about the images on the page </p>
+          <p style="text-align: center; padding-top: 16px">
+            <a href="#"><i class="fa fa-leaf fa-lg"></i></a>&nbsp;
+          </p>
         </div>
       </section>
       <!-- Images -->
