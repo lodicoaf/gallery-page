@@ -54,14 +54,131 @@ a {
   font-size: 1rem;
 }
 
+.heading {
+	display: flex;
+	flex-flow: column-reverse;
+	padding: 5em 0 2em 2em;
+	font-family: 'Hind Madurai', sans-serif;
+}
+
+.slide-container {
+	flex-grow: 15;
+}
+
+.title {
+	flex-grow: 1;
+	padding-left: 0rem;
+	padding-right: 2rem;
+	background: #FFF;
+	margin-right: .5em;
+	margin-left: -1.5em;
+}
+
+.heading h1 {
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+.heading p {
+	font-size: 2em;
+}
+
+/*-- Boxslider Style Corrections Taken from gallery repo--*/
+.bx-wrapper .bx-viewport {
+	left: -30px;
+	background: rgba(255,255,255,0);
+	border-color: rgba(255,255,255,0);
+	box-shadow: none;
+}
+ul.bxslider { /*-- corrects image position --*/
+	margin-left: -35px;
+}
+.bx-caption { /*-- corrects caption position --*/
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+a.bx-prev {
+	margin-left: -15px;
+}
+a.bx-next {
+	margin-right: 30px;
+}
+
+#main-navigation:target {
+  width: 100%;
+}
+.navigation {
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 42%;
+	transition: width .4s ease;
+	background-color: #EAEAEA;
+  font-family: 'Hind Madurai', sans-serif;
+	z-index: 10000;
+	box-shadow: inset 5px 5px 0 #999, inset 0px -5px 0 #999;
+}
+.navigation h3 {
+	padding-top: 2rem;
+	padding-left: 2rem;
+}
+.navigation ul {
+	list-style-type: none;
+	font-size: 1.8rem
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+}
+.navigation li a:hover {
+	background-color: #555;
+	color: #fff;
+}
+.icon-wrap {
+	position: fixed;
+	z-index: 9999;
+	top: 1rem;
+	right: 1.25rem;
+}
+span.hamburger {
+	background: rgba(255,255,255,0.8);
+	border: 2px solid #555;
+	border-radius: 8px;
+	color: #555;
+	font-size: 3rem;
+}
+span:hover.hamburger {
+	background: rgba(255,255,255,1);
+	color: #999;
+	border-color: #999;
+}
+span.x-mark {
+	color: #555;
+	font-size: 3em;
+	position: absolute;
+	top: 1rem;
+	right: 1.25rem;
+	padding: 0 .7rem;
+}
+span:hover.x-mark { 
+	color: #999;
+}
+
+footer p {
+	text-align: center;
+	padding: 15px 0px;
+}
+
 @media screen and (min-width: 478px) {
-  .panel {
-    width: 49%;
-  }
+  html {font-size: 13px;}
+  .panel { width: 49%; }
+  #main-navigation:target {width: 68%;}
 }
 
 @media screen and (min-width: 768px) {
-  .panel {
-    width: 33%;
-  }
+  html {font-size: 14px;}
+  .panel { width: 33%; }
+  #main-navigation:target {width: 32%;}
 }
