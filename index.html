@@ -62,57 +62,69 @@
       <!-- Images -->
       <section class="grid">
         <div id="image1" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/first.jpg" alt="firstday" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image2" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/nose.jpg" alt="nose" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image3" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/ball.jpg" alt="ball" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image4" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/tall.jpg" alt="tall" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image5" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/model.jpg" alt="model" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image6" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/stairs.jpg" alt="stairs" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image7" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/kayak.jpg" alt="kayak" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image8" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/sleep.jpg" alt="sleep" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image9" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/snow.jpg" alt="snow" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image10" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/chad.jpg" alt="flannel" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image11" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/rain.jpg" alt="rain" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
         <div id="image12" class="panel">
-          <img src="pix/place.png" alt="place" />
+          <img src="pix/camp.jpg" alt="camp" onclick="onClick(this)" />
           <p> This is the caption for the image </p>
         </div>
       </section>
+      <div id="modal01" class="modal" onclick="this.style.display='none'">
+			  <span class="closebtn container">&times;</span>
+			  <div class="modal-content animate-zoom">
+			    <img id="img01" style="width:100%">
+			  </div>
+      </div>
     </main>
     <footer>
       <p> &copy; Alexanderia LoDico, 2016 </p>
     </footer>
+    <script>
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			}
+		</script>
   </body>
 </html>
