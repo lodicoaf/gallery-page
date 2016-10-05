@@ -11,6 +11,7 @@ body {
 
 html {
   font-size: 12px;
+  background-color: oldlace;
 }
 
 h1 {font-size: 4rem; margin: 1rem auto 1.5rem;}
@@ -23,8 +24,8 @@ p, ul {font-size: 1.4rem; margin: 1rem auto 1rem;}
 .grid {
   margin-left: 0.4%;
   font-family: 'Hind Madurai', sans-serif;
-  border-top: 2px solid #656565;
-  border-bottom: 2px solid #656565;
+  border-top: 2px solid #3a571f;
+  border-bottom: 2px solid #3a571f;
 }
 
 .panel {
@@ -37,6 +38,7 @@ p, ul {font-size: 1.4rem; margin: 1rem auto 1rem;}
 
 a {
   text-decoration: none;
+  color: #3a571f;
 }
 
 .panel {
@@ -59,6 +61,7 @@ a {
 	flex-flow: column-reverse;
 	padding: 5em 0 2em 2em;
 	font-family: 'Hind Madurai', sans-serif;
+  color: #575757;
 }
 
 .slide-container {
@@ -72,6 +75,11 @@ a {
 	background: #FFF;
 	margin-right: .5em;
 	margin-left: -1.5em;
+  background-color: oldlace;
+}
+
+.title a:hover {
+  color: rgba(58, 87, 31, 0.7);
 }
 
 .heading h1 {
@@ -115,7 +123,7 @@ a.bx-next {
   right: 0;
   height: 42%;
 	transition: width .4s ease;
-	background-color: #EAEAEA;
+	background-color: snow;
   font-family: 'Hind Madurai', sans-serif;
 	z-index: 10000;
 	box-shadow: inset 5px 5px 0 #999, inset 0px -5px 0 #999;
@@ -123,6 +131,7 @@ a.bx-next {
 .navigation h3 {
 	padding-top: 2rem;
 	padding-left: 2rem;
+  color: #575757;
 }
 .navigation ul {
 	list-style-type: none;
@@ -133,8 +142,7 @@ a.bx-next {
 	padding: 1rem;
 }
 .navigation li a:hover {
-	background-color: #555;
-	color: #fff;
+	font-weight: bold;
 }
 .icon-wrap {
 	position: fixed;
@@ -162,7 +170,7 @@ span.x-mark {
 	right: 1.25rem;
 	padding: 0 .7rem;
 }
-span:hover.x-mark { 
+span:hover.x-mark {
 	color: #999;
 }
 
