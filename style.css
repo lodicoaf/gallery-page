@@ -27,6 +27,11 @@ p, ul {font-size: 1.4rem; margin: 1rem auto 1rem;}
   border-top: 4px solid #3a571f;
   border-bottom: 4px solid #3a571f;
   padding-top: 15px;
+  color: #575757;
+}
+
+.grid p{
+  font-size: .85rem;
 }
 
 .grid > div > img:hover {
