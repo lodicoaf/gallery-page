@@ -95,7 +95,7 @@ a {
 }
 
 .heading h1 {
-	font-size: 3rem;
+	font-size: 5rem;
 	margin-top: 2rem;
 }
 .heading p {
@@ -232,6 +232,8 @@ span:hover.x-mark {
 footer p {
 	text-align: center;
 	padding: 15px 0px;
+  font-family: 'Hind Madurai', sans-serif;
+  color: #575757;
 }
 
 .modal-content {
