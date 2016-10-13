@@ -71,23 +71,22 @@ a {
 .heading {
 	display: flex;
 	flex-flow: column-reverse;
-	padding: 5em 2em 0 2em;
+	padding: 5em 0 2em 2em;
 	font-family: 'Hind Madurai', sans-serif;
   color: #b0793f;
 }
 
 .slide-container {
-  width: 70%;
-  display: block;
-  margin: 0 auto;
+	flex-grow: 15;
 }
 
 .title {
 	flex-grow: 1;
 	padding-left: 0rem;
 	padding-right: 2rem;
-	background: #FFF;
   background-color: oldlace;
+  margin-right: .5em;
+  margin-left: -1.5em;
   text-align: center;
 }
 
@@ -260,6 +259,8 @@ footer a:hover {
 @media screen and (min-width: 768px) {
   html {font-size: 14px;}
   .panel { width: 33%; }
+  .heading {flex-flow: row wrap;}
+  .title {width: 32%; margin-left: 3em; padding-top: 150px;}
   #main-navigation:target {width: 32%;}
-    .slide-container { width: 50%; }
+  .slide-container { width: 50%; }
 }
