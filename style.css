@@ -71,7 +71,7 @@ a {
 .heading {
 	display: flex;
 	flex-flow: column-reverse;
-	padding: 5em 0 2em 2em;
+	padding: 5em 2em 0 2em;
 	font-family: 'Hind Madurai', sans-serif;
   color: #b0793f;
 }
@@ -87,20 +87,14 @@ a {
 	padding-left: 0rem;
 	padding-right: 2rem;
 	background: #FFF;
-	margin-right: .5em;
-	margin-left: -1.5em;
   background-color: oldlace;
   text-align: center;
-}
-
-.title a:hover {
-  color: rgba(58, 87, 31, 0.7);
 }
 
 .heading h1 {
   font-family: 'Merienda One', cursive;
 	font-size: 6rem;
-	margin-top: 0;
+	margin: 0 auto;
 }
 .heading p {
 	font-size: 1.8em;
@@ -223,6 +217,19 @@ footer p {
   color: #575757;
 }
 
+.social p{
+  margin-top: -25px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3a571f;
+}
+
+footer a:hover {
+  color: rgba(58, 87, 31, 0.7);
+}
+
 .modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -247,10 +254,12 @@ footer p {
   html {font-size: 13px;}
   .panel { width: 49%; }
   #main-navigation:target {width: 68%;}
+  .slide-container { width: 60%; }
 }
 
 @media screen and (min-width: 768px) {
   html {font-size: 14px;}
   .panel { width: 33%; }
   #main-navigation:target {width: 32%;}
+    .slide-container { width: 50%; }
 }
