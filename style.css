@@ -67,7 +67,7 @@ a {
   color: #b0793f;
   text-align: center;
 }
-
+/*-- Title for page --*/
 .heading {
 	display: flex;
 	flex-flow: column-reverse;
@@ -110,6 +110,7 @@ ul.bxslider {/*-- corrects image position --*/
    top: -15px;
  }
 
+/*-- Navigation popout box --*/
 #main-navigation:target {
   width: 100%;
 }
@@ -241,6 +242,7 @@ footer p {
     to {transform:scale(1);}
 }
 
+/*-- Media Queries --*/
 @media screen and (min-width: 478px) {
   html {font-size: 13px;}
   .panel { width: 49%; }
