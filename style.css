@@ -90,6 +90,7 @@ a {
 	margin-right: .5em;
 	margin-left: -1.5em;
   background-color: oldlace;
+  text-align: center;
 }
 
 .title a:hover {
@@ -97,11 +98,12 @@ a {
 }
 
 .heading h1 {
-	font-size: 5rem;
+  font-family: 'Merienda One', cursive;
+	font-size: 6rem;
 	margin-top: 0;
 }
 .heading p {
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 ul.bxslider {/*-- corrects image position --*/
@@ -117,7 +119,7 @@ ul.bxslider {/*-- corrects image position --*/
   position: fixed;
   top: 0;
   right: 0;
-  height: 320px;
+  height: 310px;
 	transition: width .4s ease;
 	background-color: rgba(255, 250, 250, 0.95);
   font-family: 'Hind Madurai', sans-serif;
@@ -181,7 +183,7 @@ span:hover.x-mark {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(58,87,31,.85);
+	background-color: rgba(58, 87, 31, 0.7);
 }
 .modal-content {
 	margin: auto;
