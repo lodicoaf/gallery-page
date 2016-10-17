@@ -60,6 +60,7 @@ a {
 .panel img {
   width: 100%;
   height: auto;
+  box-shadow: 1px 1px 5px #b0793f;
 }
 
 .panel p{
