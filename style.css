@@ -149,6 +149,7 @@ span.hamburger {
 	border-radius: 8px;
 	color: #3a571f;
 	font-size: 3rem;
+  padding: 0 5px 0 5px;
 }
 span:hover.hamburger {
 	background: rgba(255,255,255,1);
@@ -184,7 +185,7 @@ span:hover.x-mark {
 	margin: auto;
 	position: relative;
 	padding: 0;
-	width: 550px;
+	width: 45%;
 }
 .closebtn {
 	text-decoration: none;
@@ -210,11 +211,16 @@ span:hover.x-mark {
 	clear: both;
 }
 
-footer p {
+footer p{
 	text-align: center;
 	padding: 15px 0px;
   font-family: 'Hind Madurai', sans-serif;
   color: #575757;
+}
+
+.credit p{
+  font-size: .85rem;
+  margin-top: -25px;
 }
 
 .social p{
