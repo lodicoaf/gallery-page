@@ -259,8 +259,9 @@ footer a:hover {
 @media screen and (min-width: 478px) {
   html {font-size: 13px;}
   .panel { width: 49%; }
+  .title {width: 65%; margin-left: 1em; padding-top: 50px;}
   #main-navigation:target {width: 68%;}
-  .slide-container { width: 60%; }
+  .slide-container { width: 80%; }
 }
 
 @media screen and (min-width: 768px) {
